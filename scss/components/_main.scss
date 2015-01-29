@@ -19,7 +19,8 @@ html {
 
 
 body{
-  font-family: sans-serif;
+  background-color: #f26560;    
+  font-family: $font-Raleway;
   @include zero;
   // Hides close button if there is no js
     &.noscript .close-btn
@@ -33,6 +34,11 @@ header {
   position: relative;
 }
 
+h1 {
+    font-weight: 800;
+    color: $h1-color;
+}
+
 .toggle-btn{
     position: absolute;
     right: 1em;
@@ -41,29 +47,54 @@ header {
 
 .navigation{
     @include zero;
+    
     li{
+        line-height: 4em;
+        font-weight: 200;
         list-style-type: none;
         a{
             display: block;
             padding: .5em 1em;
+            
             text-align: center;
-            border-bottom: 1px solid $light-grey;
+            color: $grn-white;
+            font-size: 1em;
+            
+            border-bottom: 1px solid $grn-white;
             text-decoration: none;
         }
 
         &:first-child a{
-            border-top: 1px solid $light-grey;
-        }
+            border-top: 1px solid $grn-white;
+        } 
+    }
+    
+    .home{
+        background-color: $home;
+    }
+
+    .about{
+        background-color: $about;
+    }
+
+    .portfolio{
+        background-color: $portfolio;
+    }
+
+    .contact{
+        background-color: $contact;
     }
 }
 
+
+
 .toggle-btn,
 .close-btn{
-    color: $text-color;
+    color: $toggle-color;
     height: 40px;
     width: 40px;
     i{
-        border: 1px solid $light-grey;
+        border: 1px solid $grn-white;
         padding: .5em;
     }
     span{
