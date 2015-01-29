@@ -121,50 +121,106 @@ h1 {
       display: block;
       padding: 0.5em 1em;
       text-align: center;
-      color: #D7f2e8;
       font-size: 1em;
       border-bottom: 1px solid #D7f2e8;
       text-decoration: none; }
-    /* line 67, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+    /* line 66, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
     .navigation li:first-child a {
       border-top: 1px solid #D7f2e8; }
-  /* line 72, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+  /* line 71, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
   .navigation .home {
     background-color: #ADD3C4; }
-  /* line 76, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+    /* line 58, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+    .navigation .home a {
+      color: #D7f2e8; }
+    /* line 62, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+    .navigation .home:hover {
+      background-color: #D7f2e8; }
+      /* line 63, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+      .navigation .home:hover a {
+        color: #ADD3C4; }
+  /* line 75, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
   .navigation .about {
     background-color: #8DC1B2; }
-  /* line 80, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+    /* line 71, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+    .navigation .about a {
+      color: #D7f2e8; }
+    /* line 75, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+    .navigation .about:hover {
+      background-color: #D7f2e8; }
+      /* line 76, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+      .navigation .about:hover a {
+        color: #8DC1B2; }
+  /* line 79, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
   .navigation .portfolio {
     background-color: #7BB5A4; }
-  /* line 84, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+    /* line 84, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+    .navigation .portfolio a {
+      color: #D7f2e8; }
+    /* line 88, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+    .navigation .portfolio:hover {
+      background-color: #D7f2e8; }
+      /* line 89, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+      .navigation .portfolio:hover a {
+        color: #7BB5A4; }
+  /* line 83, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
   .navigation .contact {
     background-color: #70AA99; }
+    /* line 97, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+    .navigation .contact a {
+      color: #D7f2e8; }
+    /* line 101, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+    .navigation .contact:hover {
+      background-color: #D7f2e8; }
+      /* line 102, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+      .navigation .contact:hover a {
+        color: #70AA99; }
 
-/* line 92, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+/* line 91, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
 .toggle-btn, .close-btn {
   color: #4f4949;
   height: 40px;
   width: 40px; }
-  /* line 96, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+  /* line 95, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
   .toggle-btn i, .close-btn i {
     border: 1px solid #D7f2e8;
     padding: 0.5em; }
-  /* line 100, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+  /* line 99, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
   .toggle-btn span, .close-btn span {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
     display: block; }
 
+/* line 32, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+main .img-greetings {
+  max-width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  display: block; }
+/* line 39, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+main .img-hover {
+  display: none; }
+/* line 43, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+main:hover .img-greetings {
+  display: none; }
+/* line 47, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/mixins */
+main:hover .img-hover {
+  max-width: 100%;
+  text-align: center;
+  vertical-align: bottom;
+  margin: auto;
+  display: block; }
+
 @media only screen and (max-width: 60em) {
-  /* line 111, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+  /* line 113, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
   .site-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
     z-index: 100; }
-    /* line 117, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+    /* line 119, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
     .site-wrapper .sliding-canvas {
       width: 100%;
       height: 100%;
@@ -173,16 +229,16 @@ h1 {
           -ms-transform: translateX(0);
               transform: translateX(0);
       transition: all 300ms ease-in-out; }
-    /* line 125, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+    /* line 127, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] .sliding-canvas {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%); }
-    /* line 129, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+    /* line 131, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
     .site-wrapper[data-state="slide-open"] {
       overflow: visible; }
 
-  /* line 135, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+  /* line 137, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
   .slide-menu {
     position: absolute;
     width: 100%;
@@ -194,11 +250,11 @@ h1 {
  }
 
 @media only screen and (min-width: 60em) {
-  /* line 148, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+  /* line 150, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
   .toggle-btn, .close-btn {
     display: none; }
 
-  /* line 152, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
+  /* line 154, /Users/Jennifer/Documents/GD_Semester_6/web dev/exercise-3/scss/components/main */
   .slide-menu {
     position: static;
     right: auto; }

@@ -27,3 +27,81 @@
   overflow: visible;
 }
 
+@mixin img{
+    
+    .img-greetings{
+        max-width: 100%;
+        text-align: center;
+        vertical-align: middle;
+        margin: auto;
+        display: block;
+    }
+    .img-hover{
+        display: none;
+    }
+    &:hover{
+        .img-greetings{
+            display: none;
+        }
+
+        .img-hover{
+            max-width: 100%;
+            text-align: center;
+            vertical-align: bottom;
+            margin: auto;
+            display: block;
+        }
+    }
+}
+
+@mixin home($grn-white, $home){
+    a{
+        color: $grn-white;
+    }
+    background-color: $home;
+    &:hover{
+        a{
+            color: $home;
+        }
+        background-color: $grn-white;
+    }
+}
+
+@mixin about($grn-white, $about){
+    a{
+        color: $grn-white;
+    }
+    background-color: $about;
+    &:hover{
+        a{
+            color: $about;
+        }
+        background-color: $grn-white;
+    }
+}
+
+@mixin portfolio($grn-white, $portfolio){
+    a{
+        color: $grn-white;
+    }
+    background-color: $portfolio;
+    &:hover{
+        a{
+            color: $portfolio;
+        }
+        background-color: $grn-white;
+    }
+}
+
+@mixin contact($grn-white, $contact){
+    a{
+        color: $grn-white;
+    }
+    background-color: $contact;
+    &:hover{
+        a{
+            color: $contact;
+        }
+        background-color: $grn-white;
+    }
+}
