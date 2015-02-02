@@ -30,13 +30,15 @@ body{
 }
 
 header {
-  padding: 0 1em;
+  padding: 0;
   position: relative;
 }
 
 h1 {
     font-weight: 800;
     color: $h1-color;
+    width: 80%;
+    padding-left: .5em;
 }
 
 .toggle-btn{
@@ -45,13 +47,23 @@ h1 {
     top:0;
 }
 
-.navigation{
+.navigation ul{  //desktop -- specs for when page is greater than 60em
     @include zero;
+    background-color: $grn-white;
+    text-align: right;
+    list-style-type: none;
+    text-align: center;
     
     li{
+        display: inline-block;
         line-height: 4em;
-        font-weight: 200;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
         list-style-type: none;
+        margin-left: -3px;
+        width: 24.8%;
+        
         a{
             display: block;
             padding: .5em 1em;
@@ -87,15 +99,21 @@ h1 {
 
 
 
+
 .toggle-btn,
 .close-btn{
     color: $toggle-color;
     height: 40px;
     width: 40px;
     i{
-        border: 1px solid $grn-white;
+        border: 2px solid $toggle-color;
+        //background-color: $grn-white;
         padding: .5em;
     }
+    i:hover{
+        background-color: $grn-white;
+    }
+    
     span{
         @include hide-text;
     }
@@ -107,7 +125,7 @@ main{
 
 
 // Sliding Navigation
-@media only screen and (max-width: 60em){
+@media only screen and (max-width: 60em){ //mobile -- specs for when page is less than 60em
 //Page should move when nav opens
 //only time we will ever use max-width
     .site-wrapper{
@@ -143,6 +161,12 @@ main{
         bottom: 0;
         right: -100%;
     }
+    
+    .navigation ul li{
+        display: block;
+        width: 100%;
+    }
+    
 }//@media
 
 @media only screen and (min-width: 60em){
@@ -151,8 +175,8 @@ main{
         display:none;
     }
     
-    .slide-menu{
+    body.noscript .slide-menu{
         position:static;
-        right: auto;
+        right: auto;  
     }
 }//media

@@ -12,7 +12,7 @@
     -o-transition: $transition-property $transition-time $method;
     transition: $transition-property $transition-time $method;
 }
-
+//landing page
 // Hide text in an element
 @mixin hide-text {
   text-indent: 100%;
@@ -21,12 +21,7 @@
   display: block; // inline elements with this won't hide text unless set to block
 }
 
-@mixin show-text{
-  text-indent: 0;
-  white-space: normal;
-  overflow: visible;
-}
-
+//landing page 
 @mixin img{
     
     .img-greetings{
@@ -54,6 +49,16 @@
     }
 }
 
+
+//nav has been toggled out
+@mixin show-text{
+  text-indent: 0;
+  white-space: normal;
+  overflow: visible;
+}
+
+
+//on the navigation
 @mixin home($grn-white, $home){
     a{
         color: $grn-white;
